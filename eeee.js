@@ -7,9 +7,9 @@ function startpost(json){
   for (var i = 0; i < numposts; i++){
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
+    var sortBy = 'title';
     var posturl;
-    var sortBy = 'titleasc';
-    
+        
     if (i == json.feed.entry.length) break;
     
     for (var k = 0; k < entry.link.length; k++){
