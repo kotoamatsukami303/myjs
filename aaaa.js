@@ -8,7 +8,7 @@ function startpost(json){
     var entry = json.feed.entry[i];
     var posttitle = entry.title.$t;
     var posturl;
-    sortAlphabetically: true, // `false` to sort posts by published date
+    var sort = alphabetically, // `false` to sort posts by published date
     
     if (i == json.feed.entry.length) break;
     
